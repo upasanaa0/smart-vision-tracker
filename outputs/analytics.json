@@ -1,0 +1,4918 @@
+{
+  "summary": {
+    "total_frames": 660,
+    "average_fps": 3.11,
+    "peak_fps": 6.37,
+    "class_totals": {
+      "car": 14418,
+      "truck": 335,
+      "person": 1,
+      "bus": 3
+    },
+    "class_peak_per_frame": {
+      "car": 30,
+      "truck": 4,
+      "person": 1,
+      "bus": 1
+    },
+    "unique_ids_tracked": {},
+    "start_time": "2026-04-15T18:59:42.036265",
+    "end_time": "2026-04-15T19:03:29.271385"
+  },
+  "frame_logs": [
+    {
+      "frame": 0,
+      "fps": 0.87,
+      "detections": {
+        "car": 20,
+        "truck": 3
+      }
+    },
+    {
+      "frame": 1,
+      "fps": 1.49,
+      "detections": {
+        "car": 17,
+        "truck": 4
+      }
+    },
+    {
+      "frame": 2,
+      "fps": 2.31,
+      "detections": {
+        "car": 17,
+        "truck": 3
+      }
+    },
+    {
+      "frame": 3,
+      "fps": 2.78,
+      "detections": {
+        "car": 17,
+        "truck": 3
+      }
+    },
+    {
+      "frame": 4,
+      "fps": 2.58,
+      "detections": {
+        "car": 18,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 5,
+      "fps": 1.16,
+      "detections": {
+        "car": 19,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 6,
+      "fps": 1.9,
+      "detections": {
+        "car": 19,
+        "truck": 4
+      }
+    },
+    {
+      "frame": 7,
+      "fps": 2.07,
+      "detections": {
+        "car": 20,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 8,
+      "fps": 1.76,
+      "detections": {
+        "car": 21,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 9,
+      "fps": 1.5,
+      "detections": {
+        "car": 18,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 10,
+      "fps": 1.05,
+      "detections": {
+        "car": 18,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 11,
+      "fps": 1.11,
+      "detections": {
+        "car": 17,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 12,
+      "fps": 1.89,
+      "detections": {
+        "car": 17,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 13,
+      "fps": 3.19,
+      "detections": {
+        "car": 19,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 14,
+      "fps": 3.47,
+      "detections": {
+        "car": 18,
+        "truck": 3
+      }
+    },
+    {
+      "frame": 15,
+      "fps": 3.62,
+      "detections": {
+        "car": 18,
+        "truck": 3
+      }
+    },
+    {
+      "frame": 16,
+      "fps": 3.53,
+      "detections": {
+        "car": 17,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 17,
+      "fps": 3.55,
+      "detections": {
+        "car": 18,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 18,
+      "fps": 3.64,
+      "detections": {
+        "car": 16,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 19,
+      "fps": 3.65,
+      "detections": {
+        "car": 17,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 20,
+      "fps": 3.51,
+      "detections": {
+        "car": 17,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 21,
+      "fps": 3.82,
+      "detections": {
+        "car": 17,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 22,
+      "fps": 3.91,
+      "detections": {
+        "car": 18,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 23,
+      "fps": 3.93,
+      "detections": {
+        "car": 17,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 24,
+      "fps": 5.06,
+      "detections": {
+        "car": 18,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 25,
+      "fps": 4.34,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 26,
+      "fps": 4.93,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 27,
+      "fps": 4.86,
+      "detections": {
+        "car": 16
+      }
+    },
+    {
+      "frame": 28,
+      "fps": 5.84,
+      "detections": {
+        "car": 15,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 29,
+      "fps": 6.37,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 30,
+      "fps": 4.93,
+      "detections": {
+        "car": 15
+      }
+    },
+    {
+      "frame": 31,
+      "fps": 4.25,
+      "detections": {
+        "car": 16
+      }
+    },
+    {
+      "frame": 32,
+      "fps": 4.18,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 33,
+      "fps": 4.07,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 34,
+      "fps": 4.07,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 35,
+      "fps": 4.08,
+      "detections": {
+        "car": 18,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 36,
+      "fps": 4.07,
+      "detections": {
+        "car": 18,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 37,
+      "fps": 4.19,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 38,
+      "fps": 4.24,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 39,
+      "fps": 4.32,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 40,
+      "fps": 3.97,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 41,
+      "fps": 4.31,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 42,
+      "fps": 4.25,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 43,
+      "fps": 4.23,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 44,
+      "fps": 4.62,
+      "detections": {
+        "car": 17,
+        "person": 1
+      }
+    },
+    {
+      "frame": 45,
+      "fps": 4.8,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 46,
+      "fps": 1.77,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 47,
+      "fps": 2.25,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 48,
+      "fps": 2.97,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 49,
+      "fps": 2.46,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 50,
+      "fps": 2.34,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 51,
+      "fps": 2.87,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 52,
+      "fps": 3.96,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 53,
+      "fps": 4.02,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 54,
+      "fps": 4.28,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 55,
+      "fps": 4.13,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 56,
+      "fps": 4.21,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 57,
+      "fps": 4.37,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 58,
+      "fps": 4.3,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 59,
+      "fps": 3.76,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 60,
+      "fps": 3.47,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 61,
+      "fps": 3.39,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 62,
+      "fps": 3.42,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 63,
+      "fps": 4.32,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 64,
+      "fps": 4.19,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 65,
+      "fps": 4.52,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 66,
+      "fps": 3.98,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 67,
+      "fps": 4.19,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 68,
+      "fps": 4.34,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 69,
+      "fps": 3.37,
+      "detections": {
+        "car": 19,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 70,
+      "fps": 4.2,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 71,
+      "fps": 4.21,
+      "detections": {
+        "car": 20,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 72,
+      "fps": 4.18,
+      "detections": {
+        "car": 18,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 73,
+      "fps": 3.38,
+      "detections": {
+        "car": 17,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 74,
+      "fps": 2.95,
+      "detections": {
+        "car": 18,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 75,
+      "fps": 2.57,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 76,
+      "fps": 2.78,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 77,
+      "fps": 3.32,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 78,
+      "fps": 4.08,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 79,
+      "fps": 4.35,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 80,
+      "fps": 4.02,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 81,
+      "fps": 4.28,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 82,
+      "fps": 4.11,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 83,
+      "fps": 4.56,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 84,
+      "fps": 4.05,
+      "detections": {
+        "car": 16
+      }
+    },
+    {
+      "frame": 85,
+      "fps": 4.05,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 86,
+      "fps": 3.86,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 87,
+      "fps": 4.3,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 88,
+      "fps": 3.3,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 89,
+      "fps": 3.65,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 90,
+      "fps": 2.71,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 91,
+      "fps": 2.37,
+      "detections": {
+        "car": 19,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 92,
+      "fps": 2.82,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 93,
+      "fps": 3.17,
+      "detections": {
+        "car": 18,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 94,
+      "fps": 3.21,
+      "detections": {
+        "car": 17,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 95,
+      "fps": 3.39,
+      "detections": {
+        "car": 17,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 96,
+      "fps": 2.65,
+      "detections": {
+        "car": 16,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 97,
+      "fps": 2.38,
+      "detections": {
+        "car": 19,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 98,
+      "fps": 3.1,
+      "detections": {
+        "car": 19,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 99,
+      "fps": 3.26,
+      "detections": {
+        "car": 18,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 100,
+      "fps": 3.16,
+      "detections": {
+        "car": 16
+      }
+    },
+    {
+      "frame": 101,
+      "fps": 3.32,
+      "detections": {
+        "car": 18,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 102,
+      "fps": 3.07,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 103,
+      "fps": 3.02,
+      "detections": {
+        "car": 18,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 104,
+      "fps": 3.02,
+      "detections": {
+        "car": 17,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 105,
+      "fps": 3.03,
+      "detections": {
+        "car": 14,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 106,
+      "fps": 2.42,
+      "detections": {
+        "car": 15,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 107,
+      "fps": 3.44,
+      "detections": {
+        "car": 16,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 108,
+      "fps": 3.43,
+      "detections": {
+        "car": 16,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 109,
+      "fps": 2.24,
+      "detections": {
+        "car": 17,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 110,
+      "fps": 3.35,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 111,
+      "fps": 3.73,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 112,
+      "fps": 3.35,
+      "detections": {
+        "car": 19,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 113,
+      "fps": 2.38,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 114,
+      "fps": 2.71,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 115,
+      "fps": 2.11,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 116,
+      "fps": 2.82,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 117,
+      "fps": 3.34,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 118,
+      "fps": 3.0,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 119,
+      "fps": 3.22,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 120,
+      "fps": 2.77,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 121,
+      "fps": 2.82,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 122,
+      "fps": 2.61,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 123,
+      "fps": 2.32,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 124,
+      "fps": 2.51,
+      "detections": {
+        "car": 21,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 125,
+      "fps": 2.92,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 126,
+      "fps": 2.92,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 127,
+      "fps": 2.89,
+      "detections": {
+        "car": 23,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 128,
+      "fps": 3.1,
+      "detections": {
+        "car": 22,
+        "truck": 3
+      }
+    },
+    {
+      "frame": 129,
+      "fps": 3.16,
+      "detections": {
+        "car": 22,
+        "truck": 3
+      }
+    },
+    {
+      "frame": 130,
+      "fps": 3.15,
+      "detections": {
+        "car": 22,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 131,
+      "fps": 3.54,
+      "detections": {
+        "car": 19,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 132,
+      "fps": 3.52,
+      "detections": {
+        "car": 22,
+        "truck": 3
+      }
+    },
+    {
+      "frame": 133,
+      "fps": 2.03,
+      "detections": {
+        "car": 23,
+        "truck": 3
+      }
+    },
+    {
+      "frame": 134,
+      "fps": 3.17,
+      "detections": {
+        "car": 23,
+        "truck": 3
+      }
+    },
+    {
+      "frame": 135,
+      "fps": 2.91,
+      "detections": {
+        "car": 23,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 136,
+      "fps": 3.3,
+      "detections": {
+        "car": 24,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 137,
+      "fps": 3.67,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 138,
+      "fps": 3.56,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 139,
+      "fps": 2.97,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 140,
+      "fps": 3.52,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 141,
+      "fps": 3.53,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 142,
+      "fps": 3.44,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 143,
+      "fps": 3.63,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 144,
+      "fps": 3.57,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 145,
+      "fps": 3.81,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 146,
+      "fps": 3.78,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 147,
+      "fps": 3.63,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 148,
+      "fps": 3.46,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 149,
+      "fps": 3.38,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 150,
+      "fps": 3.43,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 151,
+      "fps": 3.5,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 152,
+      "fps": 3.53,
+      "detections": {
+        "car": 22,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 153,
+      "fps": 3.28,
+      "detections": {
+        "car": 23,
+        "truck": 3
+      }
+    },
+    {
+      "frame": 154,
+      "fps": 3.94,
+      "detections": {
+        "car": 23,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 155,
+      "fps": 4.01,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 156,
+      "fps": 3.74,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 157,
+      "fps": 3.87,
+      "detections": {
+        "car": 24,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 158,
+      "fps": 3.92,
+      "detections": {
+        "car": 25,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 159,
+      "fps": 3.61,
+      "detections": {
+        "car": 23,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 160,
+      "fps": 3.78,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 161,
+      "fps": 3.69,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 162,
+      "fps": 3.71,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 163,
+      "fps": 3.68,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 164,
+      "fps": 3.78,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 165,
+      "fps": 3.34,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 166,
+      "fps": 3.32,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 167,
+      "fps": 3.56,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 168,
+      "fps": 3.35,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 169,
+      "fps": 3.13,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 170,
+      "fps": 3.6,
+      "detections": {
+        "car": 23,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 171,
+      "fps": 3.61,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 172,
+      "fps": 2.93,
+      "detections": {
+        "car": 23,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 173,
+      "fps": 3.19,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 174,
+      "fps": 3.66,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 175,
+      "fps": 3.34,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 176,
+      "fps": 3.58,
+      "detections": {
+        "car": 19,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 177,
+      "fps": 3.55,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 178,
+      "fps": 3.41,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 179,
+      "fps": 3.74,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 180,
+      "fps": 3.21,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 181,
+      "fps": 2.96,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 182,
+      "fps": 3.01,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 183,
+      "fps": 3.27,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 184,
+      "fps": 3.35,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 185,
+      "fps": 3.47,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 186,
+      "fps": 3.47,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 187,
+      "fps": 3.47,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 188,
+      "fps": 2.72,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 189,
+      "fps": 2.03,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 190,
+      "fps": 3.19,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 191,
+      "fps": 2.18,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 192,
+      "fps": 2.64,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 193,
+      "fps": 2.67,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 194,
+      "fps": 1.96,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 195,
+      "fps": 3.3,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 196,
+      "fps": 2.37,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 197,
+      "fps": 3.3,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 198,
+      "fps": 3.53,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 199,
+      "fps": 3.45,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 200,
+      "fps": 3.13,
+      "detections": {
+        "car": 24,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 201,
+      "fps": 3.31,
+      "detections": {
+        "car": 23,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 202,
+      "fps": 3.42,
+      "detections": {
+        "car": 22,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 203,
+      "fps": 3.49,
+      "detections": {
+        "car": 24,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 204,
+      "fps": 3.41,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 205,
+      "fps": 2.05,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 206,
+      "fps": 2.84,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 207,
+      "fps": 3.35,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 208,
+      "fps": 2.75,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 209,
+      "fps": 2.3,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 210,
+      "fps": 1.7,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 211,
+      "fps": 1.75,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 212,
+      "fps": 1.68,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 213,
+      "fps": 1.73,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 214,
+      "fps": 2.92,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 215,
+      "fps": 3.67,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 216,
+      "fps": 3.84,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 217,
+      "fps": 3.27,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 218,
+      "fps": 3.14,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 219,
+      "fps": 2.86,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 220,
+      "fps": 2.47,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 221,
+      "fps": 3.99,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 222,
+      "fps": 2.3,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 223,
+      "fps": 2.94,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 224,
+      "fps": 4.03,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 225,
+      "fps": 3.52,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 226,
+      "fps": 2.39,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 227,
+      "fps": 3.32,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 228,
+      "fps": 4.15,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 229,
+      "fps": 3.94,
+      "detections": {
+        "car": 20,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 230,
+      "fps": 3.8,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 231,
+      "fps": 2.81,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 232,
+      "fps": 2.58,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 233,
+      "fps": 2.86,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 234,
+      "fps": 3.44,
+      "detections": {
+        "car": 22,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 235,
+      "fps": 3.77,
+      "detections": {
+        "car": 23,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 236,
+      "fps": 2.91,
+      "detections": {
+        "car": 25,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 237,
+      "fps": 2.14,
+      "detections": {
+        "car": 24,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 238,
+      "fps": 2.96,
+      "detections": {
+        "car": 24,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 239,
+      "fps": 3.69,
+      "detections": {
+        "car": 22,
+        "truck": 2
+      }
+    },
+    {
+      "frame": 240,
+      "fps": 2.19,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 241,
+      "fps": 3.54,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 242,
+      "fps": 3.18,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 243,
+      "fps": 2.69,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 244,
+      "fps": 2.29,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 245,
+      "fps": 2.39,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 246,
+      "fps": 2.33,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 247,
+      "fps": 4.02,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 248,
+      "fps": 3.84,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 249,
+      "fps": 3.93,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 250,
+      "fps": 3.96,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 251,
+      "fps": 3.96,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 252,
+      "fps": 3.97,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 253,
+      "fps": 2.36,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 254,
+      "fps": 1.95,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 255,
+      "fps": 2.33,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 256,
+      "fps": 2.49,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 257,
+      "fps": 3.59,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 258,
+      "fps": 3.63,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 259,
+      "fps": 3.58,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 260,
+      "fps": 3.6,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 261,
+      "fps": 3.4,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 262,
+      "fps": 2.35,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 263,
+      "fps": 3.63,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 264,
+      "fps": 3.45,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 265,
+      "fps": 3.31,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 266,
+      "fps": 2.47,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 267,
+      "fps": 3.38,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 268,
+      "fps": 3.06,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 269,
+      "fps": 2.74,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 270,
+      "fps": 2.56,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 271,
+      "fps": 2.62,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 272,
+      "fps": 3.37,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 273,
+      "fps": 2.93,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 274,
+      "fps": 3.03,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 275,
+      "fps": 2.47,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 276,
+      "fps": 2.92,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 277,
+      "fps": 3.5,
+      "detections": {
+        "car": 19,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 278,
+      "fps": 3.88,
+      "detections": {
+        "car": 19,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 279,
+      "fps": 4.12,
+      "detections": {
+        "car": 18,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 280,
+      "fps": 4.33,
+      "detections": {
+        "car": 17,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 281,
+      "fps": 3.5,
+      "detections": {
+        "car": 18,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 282,
+      "fps": 4.11,
+      "detections": {
+        "car": 18,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 283,
+      "fps": 3.88,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 284,
+      "fps": 3.92,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 285,
+      "fps": 4.15,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 286,
+      "fps": 4.08,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 287,
+      "fps": 3.68,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 288,
+      "fps": 3.7,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 289,
+      "fps": 2.78,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 290,
+      "fps": 2.34,
+      "detections": {
+        "car": 20,
+        "bus": 1,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 291,
+      "fps": 2.51,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 292,
+      "fps": 2.23,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 293,
+      "fps": 2.95,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 294,
+      "fps": 2.42,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 295,
+      "fps": 2.43,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 296,
+      "fps": 1.72,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 297,
+      "fps": 2.16,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 298,
+      "fps": 2.18,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 299,
+      "fps": 2.64,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 300,
+      "fps": 2.93,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 301,
+      "fps": 3.61,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 302,
+      "fps": 4.31,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 303,
+      "fps": 4.18,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 304,
+      "fps": 3.64,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 305,
+      "fps": 3.88,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 306,
+      "fps": 3.25,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 307,
+      "fps": 2.71,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 308,
+      "fps": 3.94,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 309,
+      "fps": 3.69,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 310,
+      "fps": 3.93,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 311,
+      "fps": 3.86,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 312,
+      "fps": 4.21,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 313,
+      "fps": 4.1,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 314,
+      "fps": 2.59,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 315,
+      "fps": 2.51,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 316,
+      "fps": 0.93,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 317,
+      "fps": 0.97,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 318,
+      "fps": 2.23,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 319,
+      "fps": 2.57,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 320,
+      "fps": 2.32,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 321,
+      "fps": 2.72,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 322,
+      "fps": 2.74,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 323,
+      "fps": 2.26,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 324,
+      "fps": 2.74,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 325,
+      "fps": 2.35,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 326,
+      "fps": 2.59,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 327,
+      "fps": 2.31,
+      "detections": {
+        "car": 16
+      }
+    },
+    {
+      "frame": 328,
+      "fps": 1.8,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 329,
+      "fps": 2.72,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 330,
+      "fps": 2.73,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 331,
+      "fps": 2.68,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 332,
+      "fps": 2.88,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 333,
+      "fps": 2.82,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 334,
+      "fps": 2.33,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 335,
+      "fps": 2.21,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 336,
+      "fps": 2.87,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 337,
+      "fps": 2.39,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 338,
+      "fps": 2.62,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 339,
+      "fps": 3.09,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 340,
+      "fps": 3.04,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 341,
+      "fps": 2.5,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 342,
+      "fps": 3.01,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 343,
+      "fps": 3.11,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 344,
+      "fps": 2.59,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 345,
+      "fps": 3.17,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 346,
+      "fps": 3.23,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 347,
+      "fps": 3.09,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 348,
+      "fps": 3.17,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 349,
+      "fps": 2.91,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 350,
+      "fps": 2.37,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 351,
+      "fps": 3.08,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 352,
+      "fps": 2.96,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 353,
+      "fps": 2.68,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 354,
+      "fps": 2.9,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 355,
+      "fps": 2.82,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 356,
+      "fps": 2.18,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 357,
+      "fps": 2.19,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 358,
+      "fps": 1.8,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 359,
+      "fps": 2.51,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 360,
+      "fps": 1.95,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 361,
+      "fps": 2.68,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 362,
+      "fps": 2.51,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 363,
+      "fps": 2.69,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 364,
+      "fps": 2.62,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 365,
+      "fps": 1.99,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 366,
+      "fps": 2.38,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 367,
+      "fps": 2.63,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 368,
+      "fps": 2.83,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 369,
+      "fps": 3.04,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 370,
+      "fps": 2.29,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 371,
+      "fps": 1.94,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 372,
+      "fps": 1.88,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 373,
+      "fps": 2.95,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 374,
+      "fps": 3.08,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 375,
+      "fps": 3.27,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 376,
+      "fps": 3.18,
+      "detections": {
+        "car": 19,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 377,
+      "fps": 2.08,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 378,
+      "fps": 3.24,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 379,
+      "fps": 3.34,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 380,
+      "fps": 3.9,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 381,
+      "fps": 2.19,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 382,
+      "fps": 2.86,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 383,
+      "fps": 3.15,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 384,
+      "fps": 3.05,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 385,
+      "fps": 2.37,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 386,
+      "fps": 1.86,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 387,
+      "fps": 3.06,
+      "detections": {
+        "car": 17
+      }
+    },
+    {
+      "frame": 388,
+      "fps": 2.5,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 389,
+      "fps": 3.15,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 390,
+      "fps": 2.23,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 391,
+      "fps": 2.94,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 392,
+      "fps": 2.63,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 393,
+      "fps": 3.01,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 394,
+      "fps": 2.69,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 395,
+      "fps": 3.0,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 396,
+      "fps": 2.99,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 397,
+      "fps": 2.43,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 398,
+      "fps": 2.71,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 399,
+      "fps": 3.19,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 400,
+      "fps": 2.73,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 401,
+      "fps": 3.35,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 402,
+      "fps": 2.81,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 403,
+      "fps": 3.15,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 404,
+      "fps": 2.99,
+      "detections": {
+        "car": 19
+      }
+    },
+    {
+      "frame": 405,
+      "fps": 3.29,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 406,
+      "fps": 3.44,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 407,
+      "fps": 3.06,
+      "detections": {
+        "car": 18
+      }
+    },
+    {
+      "frame": 408,
+      "fps": 3.38,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 409,
+      "fps": 3.03,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 410,
+      "fps": 3.23,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 411,
+      "fps": 3.0,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 412,
+      "fps": 3.27,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 413,
+      "fps": 1.86,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 414,
+      "fps": 2.96,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 415,
+      "fps": 3.45,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 416,
+      "fps": 3.4,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 417,
+      "fps": 3.48,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 418,
+      "fps": 3.08,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 419,
+      "fps": 3.44,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 420,
+      "fps": 3.98,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 421,
+      "fps": 3.41,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 422,
+      "fps": 3.26,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 423,
+      "fps": 3.29,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 424,
+      "fps": 3.48,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 425,
+      "fps": 3.26,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 426,
+      "fps": 2.75,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 427,
+      "fps": 2.18,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 428,
+      "fps": 2.92,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 429,
+      "fps": 2.81,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 430,
+      "fps": 3.14,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 431,
+      "fps": 4.02,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 432,
+      "fps": 3.06,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 433,
+      "fps": 3.81,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 434,
+      "fps": 3.7,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 435,
+      "fps": 3.97,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 436,
+      "fps": 3.75,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 437,
+      "fps": 3.74,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 438,
+      "fps": 4.02,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 439,
+      "fps": 1.41,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 440,
+      "fps": 1.99,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 441,
+      "fps": 3.64,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 442,
+      "fps": 3.1,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 443,
+      "fps": 3.22,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 444,
+      "fps": 4.1,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 445,
+      "fps": 4.53,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 446,
+      "fps": 1.43,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 447,
+      "fps": 2.1,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 448,
+      "fps": 3.54,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 449,
+      "fps": 3.32,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 450,
+      "fps": 3.3,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 451,
+      "fps": 3.51,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 452,
+      "fps": 1.73,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 453,
+      "fps": 2.76,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 454,
+      "fps": 2.61,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 455,
+      "fps": 2.55,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 456,
+      "fps": 2.75,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 457,
+      "fps": 2.84,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 458,
+      "fps": 2.58,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 459,
+      "fps": 2.98,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 460,
+      "fps": 2.9,
+      "detections": {
+        "car": 27,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 461,
+      "fps": 3.0,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 462,
+      "fps": 3.15,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 463,
+      "fps": 2.92,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 464,
+      "fps": 3.0,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 465,
+      "fps": 2.87,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 466,
+      "fps": 2.96,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 467,
+      "fps": 2.98,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 468,
+      "fps": 2.96,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 469,
+      "fps": 2.66,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 470,
+      "fps": 2.54,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 471,
+      "fps": 2.41,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 472,
+      "fps": 2.74,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 473,
+      "fps": 2.06,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 474,
+      "fps": 3.59,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 475,
+      "fps": 3.47,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 476,
+      "fps": 2.77,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 477,
+      "fps": 3.35,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 478,
+      "fps": 3.04,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 479,
+      "fps": 3.45,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 480,
+      "fps": 3.32,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 481,
+      "fps": 3.45,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 482,
+      "fps": 3.41,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 483,
+      "fps": 3.45,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 484,
+      "fps": 3.46,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 485,
+      "fps": 3.16,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 486,
+      "fps": 3.48,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 487,
+      "fps": 3.68,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 488,
+      "fps": 3.22,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 489,
+      "fps": 2.47,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 490,
+      "fps": 3.13,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 491,
+      "fps": 2.84,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 492,
+      "fps": 2.97,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 493,
+      "fps": 3.5,
+      "detections": {
+        "car": 29
+      }
+    },
+    {
+      "frame": 494,
+      "fps": 2.79,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 495,
+      "fps": 3.44,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 496,
+      "fps": 3.26,
+      "detections": {
+        "car": 29
+      }
+    },
+    {
+      "frame": 497,
+      "fps": 3.41,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 498,
+      "fps": 3.24,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 499,
+      "fps": 3.46,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 500,
+      "fps": 4.01,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 501,
+      "fps": 3.16,
+      "detections": {
+        "car": 29
+      }
+    },
+    {
+      "frame": 502,
+      "fps": 3.16,
+      "detections": {
+        "car": 30
+      }
+    },
+    {
+      "frame": 503,
+      "fps": 1.42,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 504,
+      "fps": 2.8,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 505,
+      "fps": 3.76,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 506,
+      "fps": 4.23,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 507,
+      "fps": 3.82,
+      "detections": {
+        "car": 29
+      }
+    },
+    {
+      "frame": 508,
+      "fps": 4.0,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 509,
+      "fps": 4.19,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 510,
+      "fps": 3.69,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 511,
+      "fps": 2.68,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 512,
+      "fps": 2.56,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 513,
+      "fps": 3.01,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 514,
+      "fps": 3.59,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 515,
+      "fps": 3.68,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 516,
+      "fps": 3.41,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 517,
+      "fps": 3.0,
+      "detections": {
+        "car": 29
+      }
+    },
+    {
+      "frame": 518,
+      "fps": 1.78,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 519,
+      "fps": 1.98,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 520,
+      "fps": 1.63,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 521,
+      "fps": 1.91,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 522,
+      "fps": 2.25,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 523,
+      "fps": 1.88,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 524,
+      "fps": 2.31,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 525,
+      "fps": 2.57,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 526,
+      "fps": 2.24,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 527,
+      "fps": 2.68,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 528,
+      "fps": 2.56,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 529,
+      "fps": 2.01,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 530,
+      "fps": 2.8,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 531,
+      "fps": 2.77,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 532,
+      "fps": 2.86,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 533,
+      "fps": 2.82,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 534,
+      "fps": 2.99,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 535,
+      "fps": 2.98,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 536,
+      "fps": 2.89,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 537,
+      "fps": 2.87,
+      "detections": {
+        "car": 29
+      }
+    },
+    {
+      "frame": 538,
+      "fps": 3.01,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 539,
+      "fps": 2.92,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 540,
+      "fps": 2.99,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 541,
+      "fps": 3.27,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 542,
+      "fps": 2.83,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 543,
+      "fps": 2.85,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 544,
+      "fps": 2.69,
+      "detections": {
+        "car": 27
+      }
+    },
+    {
+      "frame": 545,
+      "fps": 2.22,
+      "detections": {
+        "car": 28
+      }
+    },
+    {
+      "frame": 546,
+      "fps": 1.99,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 547,
+      "fps": 2.91,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 548,
+      "fps": 2.84,
+      "detections": {
+        "car": 26
+      }
+    },
+    {
+      "frame": 549,
+      "fps": 2.25,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 550,
+      "fps": 2.43,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 551,
+      "fps": 2.83,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 552,
+      "fps": 3.03,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 553,
+      "fps": 2.79,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 554,
+      "fps": 2.88,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 555,
+      "fps": 2.58,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 556,
+      "fps": 2.51,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 557,
+      "fps": 3.02,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 558,
+      "fps": 3.29,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 559,
+      "fps": 2.44,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 560,
+      "fps": 2.86,
+      "detections": {
+        "car": 26,
+        "bus": 1
+      }
+    },
+    {
+      "frame": 561,
+      "fps": 2.79,
+      "detections": {
+        "car": 25,
+        "truck": 1,
+        "bus": 1
+      }
+    },
+    {
+      "frame": 562,
+      "fps": 2.99,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 563,
+      "fps": 3.04,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 564,
+      "fps": 3.15,
+      "detections": {
+        "car": 27,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 565,
+      "fps": 3.06,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 566,
+      "fps": 3.02,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 567,
+      "fps": 3.31,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 568,
+      "fps": 3.14,
+      "detections": {
+        "car": 27,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 569,
+      "fps": 2.91,
+      "detections": {
+        "car": 29,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 570,
+      "fps": 3.02,
+      "detections": {
+        "car": 29,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 571,
+      "fps": 2.96,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 572,
+      "fps": 2.46,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 573,
+      "fps": 2.14,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 574,
+      "fps": 2.85,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 575,
+      "fps": 2.94,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 576,
+      "fps": 2.9,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 577,
+      "fps": 2.95,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 578,
+      "fps": 3.1,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 579,
+      "fps": 3.17,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 580,
+      "fps": 2.94,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 581,
+      "fps": 2.65,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 582,
+      "fps": 3.1,
+      "detections": {
+        "car": 27,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 583,
+      "fps": 2.79,
+      "detections": {
+        "car": 28,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 584,
+      "fps": 2.62,
+      "detections": {
+        "car": 28,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 585,
+      "fps": 3.83,
+      "detections": {
+        "car": 27,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 586,
+      "fps": 3.98,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 587,
+      "fps": 4.2,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 588,
+      "fps": 2.45,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 589,
+      "fps": 3.15,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 590,
+      "fps": 3.21,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 591,
+      "fps": 3.07,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 592,
+      "fps": 3.22,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 593,
+      "fps": 3.76,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 594,
+      "fps": 3.63,
+      "detections": {
+        "car": 25
+      }
+    },
+    {
+      "frame": 595,
+      "fps": 3.68,
+      "detections": {
+        "car": 26,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 596,
+      "fps": 3.41,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 597,
+      "fps": 3.71,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 598,
+      "fps": 3.84,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 599,
+      "fps": 2.99,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 600,
+      "fps": 2.61,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 601,
+      "fps": 2.45,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 602,
+      "fps": 3.22,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 603,
+      "fps": 2.04,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 604,
+      "fps": 2.49,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 605,
+      "fps": 2.51,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 606,
+      "fps": 1.94,
+      "detections": {
+        "car": 25,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 607,
+      "fps": 3.18,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 608,
+      "fps": 2.92,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 609,
+      "fps": 3.39,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 610,
+      "fps": 3.2,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 611,
+      "fps": 2.92,
+      "detections": {
+        "car": 24,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 612,
+      "fps": 2.77,
+      "detections": {
+        "car": 22,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 613,
+      "fps": 3.51,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 614,
+      "fps": 3.75,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 615,
+      "fps": 3.54,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 616,
+      "fps": 3.39,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 617,
+      "fps": 3.31,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 618,
+      "fps": 3.43,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 619,
+      "fps": 3.85,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 620,
+      "fps": 4.0,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 621,
+      "fps": 3.59,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 622,
+      "fps": 4.18,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 623,
+      "fps": 3.48,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 624,
+      "fps": 3.29,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 625,
+      "fps": 3.17,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 626,
+      "fps": 3.46,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 627,
+      "fps": 3.65,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 628,
+      "fps": 3.45,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 629,
+      "fps": 3.73,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 630,
+      "fps": 3.59,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 631,
+      "fps": 3.42,
+      "detections": {
+        "car": 23,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 632,
+      "fps": 2.45,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 633,
+      "fps": 3.34,
+      "detections": {
+        "car": 24
+      }
+    },
+    {
+      "frame": 634,
+      "fps": 3.5,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 635,
+      "fps": 2.94,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 636,
+      "fps": 3.58,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 637,
+      "fps": 2.37,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 638,
+      "fps": 2.04,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 639,
+      "fps": 1.85,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 640,
+      "fps": 1.5,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 641,
+      "fps": 2.0,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 642,
+      "fps": 2.19,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 643,
+      "fps": 2.83,
+      "detections": {
+        "car": 23
+      }
+    },
+    {
+      "frame": 644,
+      "fps": 2.88,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 645,
+      "fps": 2.63,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 646,
+      "fps": 2.32,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 647,
+      "fps": 2.34,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 648,
+      "fps": 2.69,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 649,
+      "fps": 3.05,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 650,
+      "fps": 2.99,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 651,
+      "fps": 3.21,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 652,
+      "fps": 3.08,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 653,
+      "fps": 3.49,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 654,
+      "fps": 3.42,
+      "detections": {
+        "car": 20
+      }
+    },
+    {
+      "frame": 655,
+      "fps": 3.3,
+      "detections": {
+        "car": 22
+      }
+    },
+    {
+      "frame": 656,
+      "fps": 3.45,
+      "detections": {
+        "car": 21
+      }
+    },
+    {
+      "frame": 657,
+      "fps": 3.28,
+      "detections": {
+        "car": 21,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 658,
+      "fps": 3.42,
+      "detections": {
+        "car": 20,
+        "truck": 1
+      }
+    },
+    {
+      "frame": 659,
+      "fps": 2.65,
+      "detections": {
+        "car": 19,
+        "truck": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Vision Tracker — Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&family=Space+Grotesk:wght@300;400;600;700&display=swap');
+
+  :root {
+    --bg: #0a0c10;
+    --surface: #111318;
+    --surface2: #1a1d25;
+    --border: #232735;
+    --accent: #00e5a0;
+    --accent2: #3b82f6;
+    --accent3: #f59e0b;
+    --accent4: #ec4899;
+    --text: #e8eaf0;
+    --muted: #6b7280;
+    --danger: #ef4444;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Scanline overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,229,160,0.015) 2px, rgba(0,229,160,0.015) 4px);
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  /* ── Header ── */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 36px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .logo-icon::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: var(--accent);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+
+  .logo-text {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+
+  .logo-sub {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--muted);
+  }
+
+  .status-dot.live {
+    background: var(--accent);
+    animation: pulse 1.5s infinite;
+  }
+
+  .status-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+  }
+
+  /* ── Upload zone ── */
+  #upload-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px);
+    gap: 24px;
+    padding: 40px;
+  }
+
+  .upload-card {
+    background: var(--surface);
+    border: 1px dashed var(--border);
+    border-radius: 16px;
+    padding: 60px 80px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .upload-card:hover {
+    border-color: var(--accent);
+    background: rgba(0,229,160,0.03);
+  }
+
+  .upload-icon {
+    width: 56px;
+    height: 56px;
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 22px;
+  }
+
+  .upload-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+
+  .upload-sub {
+    font-size: 13px;
+    color: var(--muted);
+    font-family: 'JetBrains Mono', monospace;
+    margin-bottom: 24px;
+  }
+
+  .btn {
+    background: var(--accent);
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: opacity 0.15s;
+  }
+
+  .btn:hover { opacity: 0.85; }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+  }
+
+  .btn-outline:hover { background: rgba(0,229,160,0.08); }
+
+  /* ── Dashboard layout ── */
+  #dashboard { display: none; padding: 28px 36px; }
+
+  /* ── Metric cards ── */
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .metric-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeUp 0.4s ease both;
+  }
+
+  .metric-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+  }
+
+  .metric-card.green::before { background: var(--accent); }
+  .metric-card.blue::before  { background: var(--accent2); }
+  .metric-card.amber::before { background: var(--accent3); }
+  .metric-card.pink::before  { background: var(--accent4); }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .metric-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .metric-value {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .metric-card.green .metric-value { color: var(--accent); }
+  .metric-card.blue  .metric-value { color: var(--accent2); }
+  .metric-card.amber .metric-value { color: var(--accent3); }
+  .metric-card.pink  .metric-value { color: var(--accent4); }
+
+  .metric-sub {
+    font-size: 11px;
+    color: var(--muted);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ── Chart grid ── */
+  .charts-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .chart-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    animation: fadeUp 0.4s ease both;
+  }
+
+  .chart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .chart-title {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .chart-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    color: var(--muted);
+  }
+
+  .chart-wrap {
+    position: relative;
+    height: 220px;
+  }
+
+  .donut-wrap {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ── Full-width charts ── */
+  .wide-card {
+    grid-column: 1 / -1;
+  }
+
+  /* ── Class table ── */
+  .table-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 28px;
+    animation: fadeUp 0.5s ease both;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  thead tr {
+    border-bottom: 1px solid var(--border);
+  }
+
+  th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(35,39,53,0.6);
+    color: var(--text);
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  tr:hover td { background: rgba(255,255,255,0.02); }
+
+  .bar-cell { width: 160px; }
+
+  .mini-bar-bg {
+    height: 4px;
+    background: var(--surface2);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .mini-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    background: var(--accent);
+    transition: width 0.8s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  .class-badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+  }
+
+  /* ── Time range tabs ── */
+  .tab-group {
+    display: flex;
+    gap: 4px;
+    background: var(--surface2);
+    padding: 4px;
+    border-radius: 8px;
+  }
+
+  .tab {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .tab.active {
+    background: var(--surface);
+    color: var(--accent);
+    border: 1px solid var(--border);
+  }
+
+  /* ── Footer ── */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 20px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-text {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  /* ── Sample data notice ── */
+  .notice {
+    background: rgba(245,158,11,0.08);
+    border: 1px solid rgba(245,158,11,0.25);
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent3);
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    header { padding: 16px 20px; }
+    #dashboard { padding: 20px; }
+    .charts-grid { grid-template-columns: 1fr; }
+    .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon"></div>
+    <div>
+      <div class="logo-text">Smart Vision Tracker</div>
+      <div class="logo-sub">Analytics Dashboard v2.0</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="status-dot" id="statusDot"></div>
+    <span class="status-label" id="statusLabel">NO DATA</span>
+    <input type="file" id="fileInput" accept=".json" style="display:none">
+    <button class="btn btn-outline" onclick="document.getElementById('fileInput').click()" style="font-size:11px;padding:7px 16px;">Load JSON</button>
+    <button class="btn btn-outline" onclick="loadSampleData()" style="font-size:11px;padding:7px 16px;">Demo</button>
+  </div>
+</header>
+
+<!-- Upload zone -->
+<div id="upload-zone">
+  <div class="upload-card" onclick="document.getElementById('fileInput').click()">
+    <div class="upload-icon">📂</div>
+    <div class="upload-title">Load Analytics Data</div>
+    <div class="upload-sub">dashboard_data.json from outputs/</div>
+    <button class="btn" style="margin-top:4px;">Browse File</button>
+  </div>
+  <button class="btn btn-outline" onclick="loadSampleData()">Try Demo with Sample Data</button>
+</div>
+
+<!-- Dashboard -->
+<div id="dashboard">
+  <div class="notice" id="sampleNotice">⚠ Showing demo data — load your dashboard_data.json for real results</div>
+
+  <!-- Metrics -->
+  <div class="metrics-grid" id="metricsGrid"></div>
+
+  <!-- Charts row 1 -->
+  <div class="charts-grid">
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">FPS over time</span>
+        <div class="tab-group" id="rangeTabs">
+          <button class="tab active" onclick="setRange('all',this)">All</button>
+          <button class="tab" onclick="setRange('first',this)">First 25%</button>
+          <button class="tab" onclick="setRange('last',this)">Last 25%</button>
+        </div>
+      </div>
+      <div class="chart-wrap"><canvas id="fpsChart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">Class distribution</span>
+        <span class="chart-tag">by total detections</span>
+      </div>
+      <div class="donut-wrap"><canvas id="donutChart"></canvas></div>
+    </div>
+  </div>
+
+  <!-- Charts row 2 -->
+  <div class="charts-grid" style="margin-bottom:28px;">
+    <div class="chart-card" style="grid-column:1/-1;">
+      <div class="chart-header">
+        <span class="chart-title">Detections timeline</span>
+        <span class="chart-tag" id="classCount">—</span>
+      </div>
+      <div class="chart-wrap" style="height:240px;"><canvas id="detectChart"></canvas></div>
+    </div>
+  </div>
+
+  <!-- Class table -->
+  <div class="table-card">
+    <div class="chart-header">
+      <span class="chart-title">Per-class breakdown</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Class</th>
+          <th>Total detections</th>
+          <th>Peak / frame</th>
+          <th>Unique IDs</th>
+          <th>Share</th>
+          <th class="bar-cell"></th>
+        </tr>
+      </thead>
+      <tbody id="classTableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<footer>
+  <span class="footer-text" id="footerMeta">—</span>
+  <span class="footer-text">Smart Vision Tracker &mdash; YOLOv8 + OpenCV</span>
+</footer>
+
+<script>
+let globalData = null;
+let fpsChartInst = null;
+let detectChartInst = null;
+let donutChartInst = null;
+
+const PALETTE = ['#00e5a0','#3b82f6','#f59e0b','#ec4899','#a78bfa','#34d399','#fb923c','#38bdf8','#f472b6','#4ade80'];
+
+// ── File input ──
+document.getElementById('fileInput').addEventListener('change', e => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      const data = JSON.parse(ev.target.result);
+      renderDashboard(data, false);
+    } catch {
+      alert('Invalid JSON file. Make sure you select dashboard_data.json from outputs/');
+    }
+  };
+  reader.readAsText(file);
+});
+
+// ── Sample data ──
+function loadSampleData() {
+  const classes = ['person','car','bicycle','truck','dog'];
+  const frames = 300;
+  const timeline = [];
+  for (let i = 0; i < frames; i += 3) {
+    const entry = { f: i, fps: 20 + Math.random()*15 };
+    classes.forEach((c, idx) => {
+      const base = [8,4,2,1,1][idx];
+      entry[c] = Math.max(0, Math.round(base + (Math.random()-0.4)*base));
+    });
+    timeline.push(entry);
+  }
+  const summary = {
+    total_frames: frames,
+    average_fps: 26.4,
+    peak_fps: 34.1,
+    class_totals: { person:2400, car:960, bicycle:420, truck:180, dog:130 },
+    class_peak_per_frame: { person:12, car:6, bicycle:3, truck:2, dog:2 },
+    unique_ids_tracked: { person:34, car:18, bicycle:7, truck:4, dog:3 },
+    start_time: new Date(Date.now()-120000).toISOString(),
+    end_time: new Date().toISOString()
+  };
+  renderDashboard({ summary, classes, timeline }, true);
+}
+
+// ── Main render ──
+function renderDashboard(data, isSample) {
+  globalData = data;
+  document.getElementById('upload-zone').style.display = 'none';
+  document.getElementById('dashboard').style.display = 'block';
+  document.getElementById('sampleNotice').style.display = isSample ? 'block' : 'none';
+  document.getElementById('statusDot').classList.add('live');
+  document.getElementById('statusLabel').textContent = isSample ? 'DEMO' : 'LOADED';
+
+  const s = data.summary;
+  const classes = data.classes || Object.keys(s.class_totals || {});
+
+  renderMetrics(s);
+  renderFpsChart(data.timeline, 'all');
+  renderDonut(s, classes);
+  renderDetectChart(data.timeline, classes);
+  renderTable(s, classes);
+
+  // Footer
+  const start = s.start_time ? new Date(s.start_time).toLocaleString() : '—';
+  document.getElementById('footerMeta').textContent = `Session started: ${start}  |  ${s.total_frames} frames processed`;
+  document.getElementById('classCount').textContent = `${classes.length} classes`;
+}
+
+// ── Metrics ──
+function renderMetrics(s) {
+  const cards = [
+    { label:'Total Frames', value: s.total_frames, sub:'frames processed', cls:'green' },
+    { label:'Avg FPS', value: s.average_fps?.toFixed(1) ?? '—', sub:`peak ${s.peak_fps?.toFixed(1) ?? '—'} fps`, cls:'blue' },
+    { label:'Classes Found', value: Object.keys(s.class_totals||{}).length, sub:'unique object types', cls:'amber' },
+    { label:'Total Detections', value: Object.values(s.class_totals||{}).reduce((a,b)=>a+b,0).toLocaleString(), sub:'across all frames', cls:'pink' },
+  ];
+  document.getElementById('metricsGrid').innerHTML = cards.map((c,i) => `
+    <div class="metric-card ${c.cls}" style="animation-delay:${i*0.07}s">
+      <div class="metric-label">${c.label}</div>
+      <div class="metric-value">${c.value}</div>
+      <div class="metric-sub">${c.sub}</div>
+    </div>
+  `).join('');
+}
+
+// ── FPS Chart ──
+function renderFpsChart(timeline, range) {
+  let data = timeline || [];
+  if (range === 'first') data = data.slice(0, Math.ceil(data.length/4));
+  if (range === 'last')  data = data.slice(-Math.ceil(data.length/4));
+
+  const labels = data.map(d => d.f);
+  const values = data.map(d => +d.fps.toFixed(1));
+  const avg = values.length ? (values.reduce((a,b)=>a+b,0)/values.length).toFixed(1) : 0;
+
+  if (fpsChartInst) fpsChartInst.destroy();
+  const ctx = document.getElementById('fpsChart').getContext('2d');
+  fpsChartInst = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'FPS',
+          data: values,
+          borderColor: '#00e5a0',
+          backgroundColor: 'rgba(0,229,160,0.07)',
+          borderWidth: 1.5,
+          pointRadius: 0,
+          fill: true,
+          tension: 0.4,
+        },
+        {
+          label: 'Avg',
+          data: values.map(() => parseFloat(avg)),
+          borderColor: 'rgba(0,229,160,0.3)',
+          borderWidth: 1,
+          borderDash: [4,4],
+          pointRadius: 0,
+          fill: false,
+        }
+      ]
+    },
+    options: chartOpts('Frame', 'FPS')
+  });
+}
+
+// ── Donut chart ──
+function renderDonut(s, classes) {
+  const totals = s.class_totals || {};
+  const values = classes.map(c => totals[c] || 0);
+  const colors = classes.map((_,i) => PALETTE[i % PALETTE.length]);
+
+  if (donutChartInst) donutChartInst.destroy();
+  const ctx = document.getElementById('donutChart').getContext('2d');
+  donutChartInst = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: classes,
+      datasets: [{ data: values, backgroundColor: colors, borderWidth: 0, hoverOffset: 6 }]
+    },
+    options: {
+      cutout: '70%',
+      plugins: {
+        legend: { position: 'right', labels: { color: '#6b7280', font: { family: 'JetBrains Mono', size: 11 }, boxWidth: 10, padding: 12 } },
+        tooltip: tooltipStyle()
+      },
+      animation: { animateRotate: true, duration: 800 }
+    }
+  });
+}
+
+// ── Detection timeline ──
+function renderDetectChart(timeline, classes) {
+  const data = timeline || [];
+  const labels = data.map(d => d.f);
+  const datasets = classes.map((cls, i) => ({
+    label: cls,
+    data: data.map(d => d[cls] || 0),
+    borderColor: PALETTE[i % PALETTE.length],
+    backgroundColor: 'transparent',
+    borderWidth: 1.5,
+    pointRadius: 0,
+    tension: 0.4,
+  }));
+
+  if (detectChartInst) detectChartInst.destroy();
+  const ctx = document.getElementById('detectChart').getContext('2d');
+  detectChartInst = new Chart(ctx, {
+    type: 'line',
+    data: { labels, datasets },
+    options: {
+      ...chartOpts('Frame', 'Count'),
+      plugins: {
+        ...chartOpts().plugins,
+        legend: { display: true, labels: { color: '#6b7280', font: { family: 'JetBrains Mono', size: 11 }, boxWidth: 10, padding: 14, pointStyle: 'circle' } }
+      }
+    }
+  });
+}
+
+// ── Table ──
+function renderTable(s, classes) {
+  const totals = s.class_totals || {};
+  const peaks  = s.class_peak_per_frame || {};
+  const uids   = s.unique_ids_tracked || {};
+  const grand  = Object.values(totals).reduce((a,b) => a+b, 0) || 1;
+
+  const rows = classes.map((cls, i) => {
+    const total  = totals[cls] || 0;
+    const pct    = ((total/grand)*100).toFixed(1);
+    const color  = PALETTE[i % PALETTE.length];
+    return `
+      <tr>
+        <td><span class="class-badge" style="border-color:${color};color:${color};">${cls}</span></td>
+        <td style="font-family:'JetBrains Mono',monospace;">${total.toLocaleString()}</td>
+        <td style="font-family:'JetBrains Mono',monospace;">${peaks[cls] ?? '—'}</td>
+        <td style="font-family:'JetBrains Mono',monospace;">${uids[cls] ?? 'N/A'}</td>
+        <td style="font-family:'JetBrains Mono',monospace;color:var(--muted);">${pct}%</td>
+        <td class="bar-cell">
+          <div class="mini-bar-bg">
+            <div class="mini-bar-fill" style="width:${pct}%;background:${color};"></div>
+          </div>
+        </td>
+      </tr>
+    `;
+  }).join('');
+
+  document.getElementById('classTableBody').innerHTML = rows;
+}
+
+// ── Range tabs ──
+function setRange(range, btn) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  if (globalData) renderFpsChart(globalData.timeline, range);
+}
+
+// ── Chart defaults ──
+function chartOpts(xLabel='', yLabel='') {
+  return {
+    responsive: true,
+    maintainAspectRatio: false,
+    interaction: { intersect: false, mode: 'index' },
+    plugins: {
+      legend: { display: false },
+      tooltip: tooltipStyle()
+    },
+    scales: {
+      x: { ticks: { color:'#6b7280', font:{ family:'JetBrains Mono', size:10 }, maxTicksLimit: 8 }, grid: { color:'rgba(255,255,255,0.04)' }, border: { color:'rgba(255,255,255,0.06)' } },
+      y: { ticks: { color:'#6b7280', font:{ family:'JetBrains Mono', size:10 } }, grid: { color:'rgba(255,255,255,0.04)' }, border: { color:'rgba(255,255,255,0.06)' } }
+    },
+    animation: { duration: 600, easing: 'easeOutQuart' }
+  };
+}
+
+function tooltipStyle() {
+  return {
+    backgroundColor: '#1a1d25',
+    borderColor: '#232735',
+    borderWidth: 1,
+    titleColor: '#e8eaf0',
+    bodyColor: '#6b7280',
+    titleFont: { family:'JetBrains Mono', size:11 },
+    bodyFont:  { family:'JetBrains Mono', size:11 },
+    padding: 10,
+    cornerRadius: 6,
+  };
+}
+</script>
+</body>
+</html>
