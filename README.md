@@ -1,13 +1,17 @@
-## Results
+# Smart Vision Tracker
 
-| Video | Resolution | Model | Avg FPS | mAP (COCO) |
-|-------|-----------|-------|---------|------------|
-| sample_street.mp4 | 1280×720 | YOLOv8n | 28.4 | 37.3 |
-| sample_mall.mp4 | 640×480 | YOLOv8n | 41.2 | 37.3 |
+A real-time object detection and tracking system using YOLOv8, OpenCV, and FastAPI.
 
-## Architecture
+## Features
+- Object detection (YOLOv8)
+- Object tracking (Centroid Tracker)
+- Zone crossing (IN/OUT counting)
+- Heatmap visualization
+- Analytics (JSON/CSV)
+- Dashboard visualization
+- REST API (FastAPI)
 
-Upload → FastAPI → YOLOv8 Detector → Centroid Tracker
-                                    → Zone Counter (tripwire)
-                                    → Dwell Heatmap
-                                    → Analytics Engine → JSON/CSV/Dashboard
+## Run
+
+```bash
+python main.py --video input.mp4
